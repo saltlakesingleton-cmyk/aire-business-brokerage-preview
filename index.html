@@ -6,6 +6,7 @@
     <title>AIRE Business Brokerage | Utah Business Broker</title>
     <meta name="description" content="AIRE Business Brokerage provides confidential exit planning, business valuations, sales, and acquisitions for Utah business owners." />
     <link rel="stylesheet" href="styles.css" />
+    <script src="intake.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -28,11 +29,12 @@
           <p class="eyebrow">CONFIDENTIAL BUSINESS VALUE REVIEW</p>
           <h2>What could your business be worth?</h2>
           <p>Start with a private conversation about your company, your goals, and the market.</p>
-          <form action="mailto:saltlakesingleton@gmail.com" method="post" enctype="text/plain">
+          <form action="mailto:saltlakesingleton@gmail.com" method="post" enctype="text/plain" data-intake-form data-inquiry-type="Confidential business value review">
             <label>Your name<input required name="Name" type="text" /></label>
             <label>Business name<input required name="Business name" type="text" /></label>
             <label>Best phone<input required name="Phone" type="tel" /></label>
             <label>What are you considering?<select name="Interest"><option>Exploring a sale</option><option>Buying a business</option><option>Preparing for an exit</option><option>Other</option></select></label>
+            <label class="hp-field" aria-hidden="true">Website<input name="Website" type="text" tabindex="-1" autocomplete="off" /></label>
             <button class="button" type="submit">Request a Private Call <span>↗</span></button>
           </form>
           <small>Private. No obligation. We will not share your information.</small>
